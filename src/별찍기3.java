@@ -1,12 +1,19 @@
-import java.util.Scanner;
-
 public class º°Âï±â3 {
 
 	public static void main(String[] args) {
-		System.out.print("¸î ´Ü : ");
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
 		
-		
+		for(int i=1;i<=5;i++)
+		{
+			for(int j=5-i;j>0;j++)
+			{
+				System.out.print(" ");
+			}
+			for(int k=1;k<=i*2-1;k++)
+			{
+				System.out.print("*");
+			}
+		}
+		System.out.println();
 
+	}
 }
