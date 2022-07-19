@@ -25,4 +25,5 @@ public class Lotto {
 				if(idx >=6) break;
 			}
 			
+	}
 }
