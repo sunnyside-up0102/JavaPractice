@@ -5,7 +5,7 @@ package P209Inheritance;
 class PoliceNGun {
 	String kind;
 	int shootCnt;
-	public PoliceNGun(String kind) {
+	public void Gun(String kind) {
 		this.kind = kind;
 		this.shootCnt = 0;
 	}
@@ -25,6 +25,7 @@ class Police{
 	public void getGun(PoliceNGun gun) {
 		this.gun = gun;
 	}
+	
 	public PoliceNGun releaseGun() {
 		PoliceNGun gun = this.gun;
 		this.gun = null;
