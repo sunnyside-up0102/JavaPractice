@@ -1,11 +1,11 @@
 
-public class 제_7장_연습문제_11번 {
+public class 제_7장_연습문제_11번_prac1 {
 
 	public static void main(String[] args) {
 		
 		int[] arr = {9,5,24,13,3,21};
 		
-		MathEx m = new MathEx();
+		MathEx m = new Math();
 		int max = m.max(arr);
 		int min = m.min(arr);
 		
@@ -14,7 +14,7 @@ public class 제_7장_연습문제_11번 {
 	}
 }
 
-class MathEx {
+class MathEx{
 	public int max(int[] arr) {
 		int temp =0;
 		for(int i=0;i<arr.length;i++) {
