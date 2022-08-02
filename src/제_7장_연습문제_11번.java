@@ -14,23 +14,24 @@ public class 제_7장_연습문제_11번 {
 	}
 }
 
-class MathEx {
+class MathEx{
+	
 	public int max(int[] arr) {
-		int temp =0;
+		int temp = 0;
 		for(int i=0;i<arr.length;i++) {
-			if(arr[i] > temp) {
+			if(arr[i]>temp) {
 				temp = arr[i];
 			}
 		}
 		return temp;
 	}
-	public int min(int[] arr) {
-		int tmp = arr[0];
+	public int min(int[]arr) {
+		int temp = arr[0];
 		for(int i=0;i<arr.length;i++) {
-			if(arr[i]<tmp) {
-				tmp = arr[i];
+			if(arr[i]<temp) {
+				temp = arr[i];
 			}
 		}
-		return tmp;
+		return temp;
 	}
 }
