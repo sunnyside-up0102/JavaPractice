@@ -1,9 +1,10 @@
-package Page336_Mapinterface;
-
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
-public class HashMapEx {
+public class HashMapEx3 {
 
 	public static void main(String[] args) {
 		Map map = new HashMap();
@@ -13,11 +14,15 @@ public class HashMapEx {
 		
 		for(int i = 0;i<names.length;i++)
 			map.put(names[i], nums[i]);
+	
+		Collection values = map.values();
 		
-		System.out.println(map);
+		for(Object i : values)
+			System.out.println(i);
 		
-		System.out.println("È«±æµ¿ÀÇ ¹øÈ£ : " + map.get("È«±æµ¿"));
-		
+		Iterator it =  values.iterator();
+		while(it.hasNext())
+			System.out.println(it.next());
 	}
 
 }
