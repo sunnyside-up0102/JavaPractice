@@ -13,7 +13,7 @@ public class StreamPeek {
 		
 		List<Shape> list = Arrays.asList(s1,s2,s3,s4);
 		
-		list.parallelStream().mapToDouble(a->a.area()).peek(a->System.out.println(a));
+		list.parallelStream().mapToDouble(a->a.area()).peek(a->System.out.println(a)).sum();
 	}
 
 }
