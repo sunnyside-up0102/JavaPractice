@@ -21,7 +21,7 @@ public class InetAddressEx {
 			System.out.println("郴 哪腔磐 ip" + local);
 			
 			InetAddress ip2 = InetAddress.getByAddress(ips[0].getAddress());
-			System.out.println(ips[0].getHostAddress()+"林家 : " + ip2);
+			System.out.println(ips[0].getHostAddress()+" 林家 : " + ip2);
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
